@@ -96,7 +96,7 @@ color: #CDCDCD;
 height: 52px;
 left: calc(50% - 207px/2 - 126.5px);
 bottom: 0px;
-
+cursor: pointer;
 background: #F1CDB3;
 border-radius: 100px;
 }
@@ -151,6 +151,20 @@ color: #4C4C4C;
     background: #F6F6F6;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 height: 879px;
+flex:1;
+}
+.card_background{
+    background: #FAFAFA;
+    border-radius: 9px;
+    width: 270px;
+    height: 435px;
+    margin: 5px 5px 5px 5px;
+}
+.card_background:hover{
+    background-color: #f4eded;
+}
+.card_background:hover button{
+    background-color: #F1CDB3;
 }
 .pets h3{
     font-family: 'Georgia';
@@ -160,7 +174,6 @@ font-size: 35px;
 line-height: 130%;
 color: #545454;
 letter-spacing: 0.06em;
-
 }
 .homeless_pets{
     display:flex;
@@ -185,6 +198,9 @@ line-height: 130%;
 
 letter-spacing: 0.06em;
 cursor: pointer;
+}
+.pets_primary_button:hover{
+     background-color: #dddad8;
 }
 .pets_buttons{
     width: 187px;
@@ -217,7 +233,8 @@ border-radius: 100px;
 }
 .pets button:hover{
     cursor: pointer;
-    box-shadow: 5px 5px 8px 2px #4C4C4C;
+    box-shadow: 5px 5px 8px 2px #9f9696;
+    background-color: #F1CDB3;
 }
 
 /*HERE STARTS THE HELP SECTION*/
@@ -231,9 +248,10 @@ border-radius: 100px;
     display:flex;
     flex-direction: row;
     width: 60px;
-height: 60px;
-justify-content: space-evenly
+    height: 60px;
+    justify-content: space-evenly;
 }
+
 ul li{
     list-style: none;
     margin: 30px 30px 30px 30px;
@@ -257,6 +275,7 @@ color: #545454;
     transform: scale(1.1);
 }
 
+
 /* HERE STARTS THE DONATION SECTION */
 .donation{
     display:flex;
@@ -270,12 +289,23 @@ color: #545454;
 height: 261px;
 }
 .donation h3{
-    color: #545454;
     font-family: 'Georgia';
 font-style: normal;
 font-weight: 400;
 font-size: 35px;
 line-height: 130%;
+letter-spacing: 0.06em;
+color: #545454;
+}
+.donation a{
+    color: #545454;
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 130%;
+text-decoration: none;
+cursor: pointer;
 }
 .donation h5{
     color: #545454;
@@ -286,9 +316,22 @@ font-size: 15px;
 line-height: 110%;
 letter-spacing: 0.06em;
 }
-.donation h4{
+.donation button{
     color: #545454;
-    display: inline;
+    display:inline;
+    width: 355px;
+height: 43px;
+background: #F1CDB3;
+border-radius: 9px;
+cursor: pointer;
+
+color: #545454;
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 130%;
+margin-left:-10px;
 }
 .donation p{
     color: #B2B2B2;
@@ -298,7 +341,7 @@ font-weight: 400;
 font-size: 12px;
 line-height: 18px;
 }
-.card{
+/*.card{
     background: #F1CDB3;
 border-radius: 9px;
 width: 355px;
