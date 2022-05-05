@@ -4,7 +4,8 @@
         <title>Shelter</title>
         <meta charset="UTF-8">
         <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" href="shelterstyle.css" type="text/css">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script src="shelterscript.js"></script>
     </head>
     <body>
         <main>
@@ -14,7 +15,7 @@
             <div class="header_container">
             <!--contains logo and navigation bar-->
             <div>
-            <h1>Cozy House</h1>
+            <a href="#"><h1>Cozy House</h1></a>
             <div class="subtitle">Shelter for pets in Boston</div>
             </div>
             <nav>
@@ -23,7 +24,7 @@
                         <a href="#abouts">About the shelter</a>
                     </li>
                     <li>
-                        <a href="#pets">Our pets</a>
+                        <a href="pets.html">Our pets</a>
                     </li>
                     <li>
                         <a href="#help">Help the shelter</a>
@@ -43,7 +44,7 @@
             We offer to give a chance to a little and nice puppy with an extremely<br> wide and open heart.
             He or she will love you more than anybody else<br> in the world, you will see!
         </p>
-        <button class="button_primary" name="friend" type="button" autofocus>Make a friend</button>
+        <button class="button_primary" name="friend" type="button" autofocus onclick="location.href='pets.html'">Make a friend</button>
         </div>
         <div>
         <img src="../assets/images/start-screen-puppy.png" alt="Puppy Image">
@@ -72,37 +73,39 @@
             </div>
         <div class="pets">
             <a id="pets"></a>
-            <h3>Our friends who<br>
-                are looking for a house</h3>
+            <div>
+            <h3>Our friends who</h3>
+               <h3>are looking for a house</h3>
+               </div>
                 <div class="homeless_pets">
                 <div>
-               <a href="#"><button name="left-arrow" type="button" class="arrow_button" >
+               <button name="left-arrow" type="button" class="arrow_button" onclick="#">
                     <img src="../assets/images/Arrow.png" alt="left arrow">
-                </button></a>
+                </button>
                 </div>
-                <div>
+                <div class="card_background">
                     <img src="../assets/images/pets-katrine.png" alt="Katrine the cat">
                     <div class="pet_names">Katrine</div>
                     <button  class="pets_buttons" name="katrine" type="button">Learn more</button>
                 </div>
-                <div>
+                <div class="card_background">
                     <img src="../assets/images/pets-jennifer.png" alt="Jennifer the dog">
                     <div class="pet_names">Jennifer</div>
                     <button name="Jennifer" type="button" class="pets_buttons">Learn more</button>
                 </div>
-                <div>
+                <div class="card_background">
                     <img src="../assets/images/pets-woody.png" alt="Woody the dog">
                     <div class="pet_names">Woody</div>
                     <button name="Woody" type="button" class="pets_buttons">Learn more</button>
                 </div>
                 <div>
-                    <button name="right-arrow" type="button" class="arrow_button">
+                    <button name="right-arrow" type="button" class="arrow_button" onclick="#">
                         <img src="../assets/images/Arrow-right.png" alt="right arrow">
                     </button>
                 </div>
                 </div>
                 <div>
-                   <a href="#"><button name="primary" type="button" class="pets_primary_button">Get to know the rest</button></a>
+                   <button name="primary" type="button" class="pets_primary_button" id="redirect">Get to know the rest</button>
                 </div>
         </div>
         <div>
@@ -158,12 +161,10 @@
             <div>
            <h3>You can also<br>make a donation</h3> 
            <h5>Name of the bank / Type of bank account</h5>
-           <div>
-               <div class="card">
+           <button type="button" name="card_button" onclick="#">
            <img src="../assets/images/credit-card.svg" alt="credit card">
-           <h4>8380 2880 8028 8791 7435</h4>
-           </div>
-           </div>
+            8380 2880 8028 8791 7435
+        </button>
            <p >Legal information and lorem ipsum dolor sit amet, consectetur<br>
              adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac<br>
               diam. Praesent ultrices maximus tortor et vulputate. Interdum et<br>
