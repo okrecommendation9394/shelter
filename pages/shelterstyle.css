@@ -239,28 +239,16 @@ border-radius: 100px;
 
 /*HERE STARTS THE HELP SECTION*/
 .help{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     height: 611px;
 }
-.help_icons{
+.rows{
     display:flex;
-    flex-direction: row;
-    width: 60px;
-    height: 60px;
+    flex-direction:row;
     justify-content: space-evenly;
-}
-
-ul li{
-    list-style: none;
-    margin: 30px 30px 30px 30px;
-    color: #545454;
-    font-family: 'Georgia';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 115%;
+    margin: 60px 60px 60px 60px;
 }
 .pets_heading{
     font-family: 'Georgia';
@@ -271,8 +259,21 @@ line-height: 130%;
 letter-spacing: 0.06em;
 color: #545454;
 }
-.pets div div:hover{
-    transform: scale(1.1);
+.class{
+ /*   margin: 0px 30px 60px 30px;*/
+    color: #545454;
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+
+}
+.help img{
+    margin: 0px 60px 0px 60px;   
+}
+.help p{
+    margin: 0px 67px 0px 60px;
 }
 
 
