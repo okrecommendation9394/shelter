@@ -3,8 +3,9 @@
     <head>
         <title>Shelter</title>
         <meta charset="UTF-8">
-        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="shelterstyle.css" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css">
         <script src="shelterscript.js"></script>
     </head>
     <body>
@@ -14,7 +15,7 @@
         <header>
             <div class="header_container">
             <!--contains logo and navigation bar-->
-            <div>
+            <div class="logo">
             <a href="#"><h1>Cozy House</h1></a>
             <div class="subtitle">Shelter for pets in Boston</div>
             </div>
@@ -47,14 +48,14 @@
         <button class="button_primary" name="friend" type="button" autofocus onclick="location.href='#pets'">Make a friend</button>
         </div>
         <div>
-        <img src="../assets/images/start-screen-puppy.png" alt="Puppy Image">
+        <img src="../assets/images/start-screen-puppy.png" alt="Puppy Image"  class="start_screen_puppy">
         </div>
         </div>
         </div>
         <div class="abouts">
             <a id="abouts"></a>
             <div>
-            <img src="../assets/images/about-pets.png" alt="about_pets_pic">
+            <img src="../assets/images/about-pets.png" alt="about_pets_pic" class="about_pic">
             </div>
             <div class="abouts_text">
             <h3 class="abouts_heading">About the shelter “Cozy House”</h3>
@@ -93,7 +94,7 @@
                     <div class="pet_names">Jennifer</div>
                     <button name="Jennifer" type="button" class="pets_buttons">Learn more</button>
                 </div>
-                <div class="card_background">
+                <div class="card_background" id="removed">
                     <img src="../assets/images/pets-woody.png" alt="Woody the dog">
                     <div class="pet_names">Woody</div>
                     <button name="Woody" type="button" class="pets_buttons">Learn more</button>
@@ -109,7 +110,7 @@
                 </div>
         </div>
             
-       <div>
+        <div>
             <a id="help"></a>
         <div class="help">
             <div>
@@ -119,41 +120,41 @@
             </div>
             <div>
                 <div class="rows">
-                    <div class="class">
+                    <div class="class" id="food">
                         <img src="../assets/images/Vector.png" alt="pet food">
                         <p>Pet food</p>
                     </div>
-                    <div class="class">  
+                    <div class="class" id="transport">  
                         <img src="../assets/images/transportation.png" alt="transportation">
                         <p>Transportation</p>
                     </div>
-                    <div class="class">
+                    <div class="class" id="toys">
                         <img src="../assets/images/toys.png" alt="toys">
                         <p>Toys</p>
                     </div>
-                    <div class="class">
+                    <div class="class" id="bowls">
                         <img src="../assets/images/bowls-and-cups.png" alt="bowls and cups">
                         <p>Bowls and cups</p>
                     </div>
-                    <div class="class">
+                    <div class="class" id="shampoo">
                         <img src="../assets/images/shampoos.png" alt="shampoo">
                         <p>Shampoos</p>
                     </div>
                 </div>
                 <div class="rows">
-                    <div class="class">
+                    <div class="class" id="vitamins">
                         <img src="../assets/images/vitamins.png" alt="vitamins">
                         <p>vitamins</p>
                     </div>
-                    <div class="class">
+                    <div class="class" id="medicine">
                         <img src="../assets/images/medicines.png" alt="medicines">
                         <p>Medicines</p>
                     </div>
-                    <div class="class">
+                    <div class="class" id="collars">
                         <img src="../assets/images/collars-or-leashes.png" alt="collars and leashes">
                         <p>Collars / leashes</p>
                     </div>
-                    <div class="class">
+                    <div class="class" id="sleep">
                         <img src="../assets/images/sleeping-area.png" alt="sleeping area">
                         <p>Sleeping areas</p>
                     </div>
@@ -163,7 +164,7 @@
         </div>
         <div class="donation">
             <img src="../assets/images/donation-dog.png" alt="donation dog" class="donation_image">
-            <div>
+            <div class="donation_text">
            <h3>You can also<br>make a donation</h3> 
            <h5>Name of the bank / Type of bank account</h5>
            <button type="button" name="card_button" onclick="#">
@@ -180,7 +181,8 @@
             <a id="contacts"></a>
             <div>
             <div class="last_part">
-                <div>
+               <div class="elems"> 
+                <div class="foot">
                     <h3>
                         For questions<br> and suggestions
                     </h3>
@@ -195,7 +197,7 @@
                     </div>
                     </div>
                 </div>
-                <div>
+                <div class="visit">
                     <h3>We are waiting<br> for your visit</h3>
                     <div>
                     <div>
@@ -212,7 +214,8 @@
                     </div>
                     </div>
                 </div>
-                <img src="../assets/images/footer-puppy.png" alt="little puppy">
+                </div>
+                <img src="../assets/images/footer-puppy.png" alt="little puppy" class="footer_puppy">
             </div>
             </div>
         </footer>
