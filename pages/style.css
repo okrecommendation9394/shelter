@@ -4,7 +4,6 @@
         height:60px;
         left: calc(50% - 708px/2);
         top: 30px;
-        background-color: red;
         display: flex;
     }
     .start_background{
@@ -25,7 +24,6 @@
         height: 27px;
         left: 265px;
         top: 16px;
-        background-color: yellow;
 
     }
     /*design for start page*/
