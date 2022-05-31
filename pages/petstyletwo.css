@@ -1,0 +1,69 @@
+@media all and (min-width:768px) and (max-width:1200px){
+    .header_container{
+        width:768px;
+    }
+    nav ul{
+        width: 443px;
+        height: 27px;
+    }
+    .logo{
+        width: 184px;
+        height: 60px;
+    }
+    /*start page*/
+    .start_page{
+        height: 1733px;
+        width:768px;
+    }
+    .first_line div{
+        width: 270px;
+        height: 435px;
+        position: absolute;
+    }
+    .second_line div{
+        width: 270px;
+        height: 435px;
+        position: absolute;
+    }
+    #katrine{
+        margin-top:40px;
+        margin-right:450px;
+    }
+    #jennifer{
+        margin-top:40px;
+        margin-left:330px;
+
+    }
+    #woody{
+        margin-top:500px;
+        margin-right:450px;
+    }
+    #sophia{
+        margin-top:500px;
+        margin-left:330px;
+    }
+    #timmy{
+        margin-top:240px;
+        margin-right:450px;
+    }
+    #freddie{
+        display:none;
+    }
+    #scarlett{
+        display:none;
+    }
+    #charly{
+        margin-top:240px;
+        margin-left:330px;
+    }
+    #contacts{
+        height: 639px;
+        width:768px;
+        position:relative;
+    }
+    #footer_puppy{
+        position:absolute;
+        margin-top:327px;
+    }
+
+}
