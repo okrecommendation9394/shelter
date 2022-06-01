@@ -46,7 +46,7 @@ height: 24px;
 padding-left:3px;
 
 }
-.underline{
+#underline{
     text-decoration: underline;
     text-decoration-thickness: 4px;
     text-decoration-color:#F1CDB3;
@@ -348,7 +348,6 @@ width: 355px;
 height: 43px;
 padding: 10px 10px 0 10px;
 }
-
 /* HERE STARTS FOOTER SECTION*/
 .last_part{
     display:flex;

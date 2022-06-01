@@ -1,0 +1,204 @@
+@media all and (min-width:320px) and (max-width:767px){
+    .header_container{ 
+        width:320px;
+        height: 60px;
+    }
+    .navbar{
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        padding:0 24px;
+    }
+    .hamburger{
+        cursor:pointer;
+        width:30px;
+        height: 22px;
+        display:flex;
+        flex-direction: column;
+    }
+    .nav-menu{
+        display:none;
+        width:285px;
+    }
+    .bar{
+        display: block;
+        width:30px;
+        height: 0px;
+        border: 2px solid #F1CDB3;
+        margin:2px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform:translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform:translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position:fixed;
+        left:-100%;
+        top:70px;
+        gap:0;
+        flex-direction:column;
+        background-color: #262626;
+        width:100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin:16px 0;
+    }
+    .nav-menu.active{
+        left:0;
+        z-index: 10;
+    }
+    /*start screen*/
+    .start_background{
+        height: 1185px;
+        width:320px;
+        
+    }
+    .start_page{
+        flex-direction: column;
+        align-items: center;
+    }
+    .start_screen_puppy{
+        width:260px;
+        height: 271.77px;
+        margin-top: 40px;
+    }
+    .start_sub{
+        margin-left: 10px;
+    }
+    /*abouts page*/
+    .abouts{
+        height: 1200px;
+        width:320px;
+        flex-direction:column-reverse;
+        justify-content: space-between;
+    }
+    .about_pic{
+        width: 260px;
+        height: 353.6px;
+        margin-top: 50px;
+    }
+    .abouts_text{
+        width: 300px;
+        height: 494px;
+        margin-left: 10px;
+    }
+    /*pets page*/
+    .pets{
+        height: 850px;
+        width:320px;
+    }
+    #removed{
+        display:none;
+    }
+    #jennifer{
+        display:none;
+    }
+
+    .arrow_button{
+        position:absolute;
+        margin-top:450px;
+    }
+    #right{
+        right: 0px;
+        left:165px;
+    }
+    #left{
+        left:45px;
+    }
+    .pets_primary_button{
+        margin-top:50px;
+    }
+    
+    /*Help page*/
+    .help{
+        height: 760px;
+        width:320px;
+    }
+    #food{
+        position: absolute;
+        left:-20px;
+       /* margin-left:15px;*/
+        margin-bottom:600px;
+    }
+    #transport{
+        position:absolute;
+        left:125px;
+    
+    }
+    #toys{
+        position: absolute;
+        left:-20px;
+        margin-top:100px;
+    }
+    #bowls{
+        position: absolute;
+        left:125px;
+        margin-top:100px; 
+       
+    }
+    #shampoo{
+        position: absolute;
+        left:-20px;
+        margin-top:200px;
+    }
+    #vitamins{
+        position: absolute;
+        left:125px;
+        margin-top:173px;
+    }
+    #medicine{
+        position: absolute;
+        left:-20px;
+        margin-top:260px;
+    }
+    #collars{
+        position: absolute;
+        left:125px;
+        margin-top:270px;
+    }
+    #sleep{
+        position: absolute;
+        left:-20px;
+        margin-top:360px;
+    }
+    /*donation section*/
+    .donation{
+        flex-direction: column-reverse;
+        height: 575px;
+        width:320px;
+    }
+    .donation_image{
+        width: 260px;
+        height: 135.2px;
+    }
+    .donation button{
+        
+            width: 300px;
+        
+    }
+    .donation_text{
+        margin-left: 10px;
+    }
+    /*footer section*/
+    .last_part{
+        height: 809px;
+        width:320px;
+        flex-direction: column;
+    }
+    .footer_puppy{
+        width: 260px;
+        height: 269px;
+    }
+    .elems{
+        margin-left:10px;
+    }
+}

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="shelterstyle.css" type="text/css">
         <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="main_320px.css" type="text/css">
         <script src="shelterscript.js"></script>
     </head>
     <body>
@@ -19,21 +20,26 @@
             <a href="#"><h1>Cozy House</h1></a>
             <div class="subtitle">Shelter for pets in Boston</div>
             </div>
-            <nav>
-                <ul >
-                    <li class="underline">
-                        <a href="#abouts">About the shelter</a>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item" id="underline">
+                        <a href="#abouts" class="nav-link">About the shelter</a>
                     </li>
-                    <li>
-                        <a href="pets.html">Our pets</a>
+                    <li class="nav-item">
+                        <a href="pets.html" class="nav-link">Our pets</a>
                     </li>
-                    <li>
-                        <a href="#help">Help the shelter</a>
+                    <li class="nav-item">
+                        <a href="#help" class="nav-link">Help the shelter</a>
                     </li>
-                    <li>
-                        <a href="#contacts">Contacts</a>
+                    <li class="nav-item">
+                        <a href="#contacts" class="nav-link">Contacts</a>
                     </li>
                 </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
             </div>
         </header>
@@ -75,21 +81,21 @@
         <div class="pets">
             <a id="pets"></a>
             <div>
-            <h3>Our friends who</h3>
-               <h3>are looking for a house</h3>
+            <h3>Our friends who<br>
+               are looking for a house</h3>
                </div>
                 <div class="homeless_pets">
                 <div>
-               <button name="left-arrow" type="button" class="arrow_button" onclick="#">
+               <button name="left-arrow" type="button" class="arrow_button" onclick="#" id="left">
                     <img src="../assets/images/Arrow.png" alt="left arrow">
                 </button>
                 </div>
-                <div class="card_background">
+                <div class="card_background" id="katrine">
                     <img src="../assets/images/pets-katrine.png" alt="Katrine the cat">
                     <div class="pet_names">Katrine</div>
                     <button  class="pets_buttons" name="katrine" type="button">Learn more</button>
                 </div>
-                <div class="card_background">
+                <div class="card_background" id="jennifer">
                     <img src="../assets/images/pets-jennifer.png" alt="Jennifer the dog">
                     <div class="pet_names">Jennifer</div>
                     <button name="Jennifer" type="button" class="pets_buttons">Learn more</button>
@@ -100,7 +106,7 @@
                     <button name="Woody" type="button" class="pets_buttons">Learn more</button>
                 </div>
                 <div>
-                    <button name="right-arrow" type="button" class="arrow_button" onclick="#">
+                    <button name="right-arrow" type="button" class="arrow_button" onclick="#" id="right">
                         <img src="../assets/images/Arrow-right.png" alt="right arrow">
                     </button>
                 </div>
@@ -219,6 +225,7 @@
             </div>
             </div>
         </footer>
+        <script src="main.js"></script>
         </main>
     </body>
 </html>
