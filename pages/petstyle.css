@@ -91,7 +91,7 @@ color: #545454;
     border-radius: 9px;
 }
 .first_line div:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
     background-color: #dfbebe;
     cursor: pointer;
 }
@@ -140,7 +140,7 @@ color: #545454;
     border-radius: 9px;
 }
 .second_line div:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
     background-color: #dfbebe;
     cursor:pointer;
 }
