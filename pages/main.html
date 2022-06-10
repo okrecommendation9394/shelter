@@ -84,13 +84,14 @@
             <h3>Our friends who<br>
                are looking for a house</h3>
                </div>
-                <div class="homeless_pets" >
+                <div class="homeless_pets" data-carousel>
                 <div>
-               <button name="left-arrow" type="button" class="arrow_button" onclick="#" id="left">
+               <button name="left-arrow" type="button" class="arrow_button" id="left" data-carousel-button="prev">
                     <img src="../assets/images/Arrow.png" alt="left arrow">
                 </button>
                 </div>
-                <div class="card_background" id="katrine">
+              <div class="slides" data-slides>
+                <div class="card_background" id="katrine" data-active>
                     <img src="../assets/images/pets-katrine.png" alt="Katrine the cat">
                     <div class="pet_names">Katrine</div>
                     <button  class="pets_buttons" name="katrine" type="button">Learn more</button>
@@ -106,9 +107,10 @@
                     <button name="Woody" type="button" class="pets_buttons">Learn more</button>
                 </div>
                 <div>
-                    <button name="right-arrow" type="button" class="arrow_button" onclick="#" id="right">
+                    <button name="right-arrow" type="button" class="arrow_button" id="right" data-carousel-button="next">
                         <img src="../assets/images/Arrow-right.png" alt="right arrow">
                     </button>
+                </div>
                 </div>
                 </div>
                 <div>
